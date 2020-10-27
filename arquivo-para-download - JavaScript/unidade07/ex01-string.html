@@ -2,7 +2,18 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
+            var frase = "Meu time fez um gol";
             
+            var letra = "";
+            var primeira_letra = "";
+            var i = 0;
+            while (letra != " "){
+                letra = frase.charAt(i);
+                primeira_letra += letra;
+                i++
+            }
+            
+            console.log(primeira_letra);
         </script>
     </head>
     <body>
