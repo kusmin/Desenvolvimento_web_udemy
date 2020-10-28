@@ -3,6 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <title>Curso jQuery Fundamental</title> 
+        
+        <style>
+            a {
+                color: aquamarine;
+            }
+        </style>
+        
     </head>
 
     <body>
@@ -11,14 +18,18 @@
             <a href="#">Argentina</a>
             <a href="#">Uruguai</a>
             <a href="#">Chile</a>
+            <a href="#">Peru</a>
+
         </nav>
-        
+            <a href="#">Paraguai</a>
+
 		<!-- scripts -->
         <script src="jquery-3.2.1.min.js"></script>
         <script>    
-        	$( function() {
-				
-			})
+        	$(function(){
+                $("nav a").css("color", "red");
+                $("nav a").css("text-decoration", "none").css("display", "block");
+            })
         </script>   
                 
     </body>
