@@ -9,8 +9,13 @@
         
         <script src="jquery-3.2.1.min.js"></script>
         <script>
+            
+            function moverDireita () {
+                $('#janela').animate( {left:300,top:299}, 1000);
+            }
+            
 			$( function(e) {			
-
+                $('#direita').click(moverDireita);
 			})
 
 		</script>        
