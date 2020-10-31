@@ -9,7 +9,20 @@
         
         <script src="jquery-3.2.1.min.js"></script>
         <script>
-			
+			$(function (e) {
+                $('#janela').hide();
+                
+                $('#mostrar').click( mostrarElemento);
+                
+                $('#esconder').click( esconderElemento);
+            })
+            
+            function mostrarElemento(e){
+                    $('#janela').show();
+                };
+            function esconderElemento(e){
+                    $('#janela').hide();
+                };
 		</script>        
     </head>
 

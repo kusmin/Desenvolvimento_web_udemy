@@ -6,7 +6,18 @@
         
         <script src="jquery-3.2.1.min.js"></script>
         <script>
-					
+            $(function(){
+                $('#cursohtml').click(function(){
+                    alert("clicou no botao html");
+                })
+                
+                function mostrarMensagem(){
+                    alert("clicou no botao css");
+                    $('#cursocss').off("mouseover", mostrarMensagem);
+                }
+                $('#cursocss').on("mouseover", mostrarMensagem);
+                $('#cursocss').on("click", mostrarMensagem);
+            })
 		</script>        
     </head>
 
